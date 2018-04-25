@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<div data-th-fragment="fragment-react" data-th-remove="tag">
+    
+    <div data-th-replace="/templates/fragments/common::fragment-no-javascript"></div>
+    <script type="text/javascript">
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.ready
+                .then(function(reg) {
+                    Starter.initPushNotifications(reg);
+                }, function() {
+                    console.log('Service Worker is not ready.');
+                });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <script type="text/babel">
+        class Greeting extends React.Component {
+            render() {
+                return (<p>Enonic loves React!</p>);
+            }
+        }
+        ReactDOM.render(
+            <Greeting />,
+            document.getElementById('app')
+        );
+        </script>
+
+    <div id="app"></div>
+</div>
+
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
-  "name": "PWA Starter for Enonic XP",
-  "short_name": "PWA Starter",
+  "name": "PWA Starter for Enonic XP with React module",
+  "short_name": "PWA Starter & React",
   "theme_color": "#FFF",
   "background_color": "#FFF",
   "display": "standalone",

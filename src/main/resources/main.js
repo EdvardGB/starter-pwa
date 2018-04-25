@@ -4,6 +4,7 @@ var portalLib = require('/lib/xp/portal');
 var siteTitle = 'PWA Starter';
 var mustache = require('/lib/xp/mustache');
 
+
 function getAppUrl() {
     return portalLib.url({path:'/app/' + app.name}) + '/';
 }
@@ -59,6 +60,7 @@ router.get('/video', function() { return renderPage('video', 'Video capabilities
 router.get('/webrtc', function() { return renderPage('webrtc', 'WebRTC functionality'); });
 router.get('/sw.js', renderSW);
 router.get('/manifest.json', renderManifest);
+router.get('/react', function() { return renderPage('react', 'Enonic React'); }); 
 
 exports.get = function (req) {
     return router.dispatch(req);
