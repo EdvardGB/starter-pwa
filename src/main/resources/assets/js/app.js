@@ -34,9 +34,11 @@ module.exports = {
     }
 };
 
+
 function subscribeToPushNotifications() {
     console.log('Subscribed to notifications');
 }
+
 
 (function(){
     window.onload = function() {
