@@ -1,5 +1,6 @@
 require('../css/styles.less');
 
+
 module.exports = {
     notifyAboutNewVersion: function() {
         var snackbarContainer = document.querySelector('#notification-bar');
