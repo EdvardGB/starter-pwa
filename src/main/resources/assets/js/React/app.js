@@ -3,7 +3,8 @@ var React = require('react');
 
 class Enonic extends React.Component {
   render() {
-    return <div>Enonic loves React!</div>;
+    return (<div>Enonic loves React!</div>);
+    
   }
 }
 
