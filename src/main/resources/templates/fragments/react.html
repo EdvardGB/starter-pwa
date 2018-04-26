@@ -7,18 +7,6 @@
 <div data-th-fragment="fragment-react" data-th-remove="tag">
     
     <div data-th-replace="/templates/fragments/common::fragment-no-javascript"></div>
-    <script type="text/javascript">
-
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.ready
-                .then(function(reg) {
-                    Starter.initPushNotifications(reg);
-                }, function() {
-                    console.log('Service Worker is not ready.');
-                });
-        }
-    </script>
-    <script type="text/babel" data-th-src="${portal.assetUrl({'_path=js/react.js'})}"></script>
     <div id="app"></div>
 </div>
 
