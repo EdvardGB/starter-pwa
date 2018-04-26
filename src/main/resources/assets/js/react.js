@@ -1,5 +1,5 @@
-var ReactDOM = require('react-dom');
-var React = require('react');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 class Enonic extends React.Component {
   render() {
