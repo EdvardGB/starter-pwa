@@ -1,4 +1,5 @@
 require('../css/styles.less');
+require('./react.js');
 
 
 module.exports = {
